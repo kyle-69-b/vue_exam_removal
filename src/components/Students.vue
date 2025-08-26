@@ -2,16 +2,16 @@
   <div>
     <h2>Student List</h2>
 
-    <!-- Conditional Rendering -->
+   
     <ul v-if="showList">
-      <!-- Loop over array -->
+  
       <li v-for="(student, index) in studentScores" :key="index"
           :class="{ highlight: student.score >= 90 }">
         {{ student.name }} - {{ student.score }}
       </li>
     </ul>
 
-    <!-- Computed Property -->
+  
     <p>Passing Students: {{ passingCount }}</p>
   </div>
 </template>
